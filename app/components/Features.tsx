@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import iPhone_Main from '../../assets/main.png';
-// import iPhone_Task from '../../assets/task.png';
+import iPhone_Task from '../../assets/task.png';
 
 const featuresApp = [
   {
