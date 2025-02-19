@@ -4,7 +4,7 @@ export default function Contacts() {
   return (
     <section id="contacts" className="flex items-center justify-center bg-gradient-to-br from-blue-50 to-blue-100 p-8">
       <div className="text-center">
-        <h2 className="text-3xl font-bold mb-6 text-blue-600">Get in touch</h2>
+        <h2 className="text-3xl font-bold mb-6 text-blue-600">Interested in working with us?</h2>
         <div className="space-x-4 flex flex-row items-center justify-center">
           <div className="flex items-center justify-center space-x-1">
             <Twitter className="w-5 h-5 text-blue-700 fill-current" />
