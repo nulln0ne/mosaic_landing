@@ -13,12 +13,13 @@ const sendClick = () => {
 
 export default function GoToApp() {
   return (
-    <div className="flex items-center justify-center py-36">
+    <div className="flex items-center justify-center py-36 bg-green-300 flex-col gap-4">
+      <h3 className="text-3xl text-green-700 font-bold">Want to make a deal securely <br />and without any limitations?</h3>
       <button
         onClick={() => sendClick()}
-        className="text-lg text-blue-700 cursor-pointer border-2 py-2 px-4  border-blue-700 rounded-lg hover:bg-blue-700 hover:text-white transition-colors"
+        className="text-lg text-green-700 bg-white cursor-pointer border-2 border-green-700 py-2 px-4 rounded-full font-bold hover:bg-green-700 hover:text-white transition-all duration-300"
       >
-        Open in Telegram
+        Open Web App
       </button>
     </div >
   )
