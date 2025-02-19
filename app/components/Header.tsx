@@ -26,7 +26,7 @@ export default function Header() {
           <div className="flex gap-6">
           </div>
           <a
-            href='#'
+            href='#contacts'
             className='px-3 py-1 bg-green-300 rounded-full relative 
                        after:content-[""] after:absolute after:inset-[-8px] 
                        after:rounded-full after:border-black 

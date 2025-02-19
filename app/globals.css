@@ -5,3 +5,7 @@
 body {
   @apply bg-secondary;
 }
+
+* {
+  scroll-behavior: smooth;
+}

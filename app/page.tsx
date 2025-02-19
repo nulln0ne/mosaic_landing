@@ -3,6 +3,9 @@ import Footer from "./components/Footer";
 import Introduction from "./components/Introduction";
 import Features from "./components/Features";
 import Journey from "./components/Journey";
+import Contacts from "./components/Contacts";
+import GoToApp from "./components/GoToApp";
+import { Analytics } from "@vercel/analytics/react"
 
 export default function Home() {
   return (
@@ -12,6 +15,10 @@ export default function Home() {
         <Introduction />
         <Features />
         <Journey />
+        <GoToApp />
+        <Contacts />
+
+        <Analytics />
       </main>
       <Footer />
     </div>

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import iPhone_Main from '../../assets/main.png';
-import iPhone_Task from '../../assets/task.png';
+// import iPhone_Task from '../../assets/task.png';
 
 const featuresApp = [
   {
@@ -70,7 +70,7 @@ export default function Features() {
   return (
     <section className="w-full pb-24">
       <div className="flex flex-row items-center justify-center gap-12 px-10">
-        <div className="w-full max-w-[500px] min-w-[200px] flex-grow">
+        <div className="w-full max-w-[400px] min-w-[200px] flex-grow">
           <Image src={iPhone_Main} alt="screenshot of main page" layout="responsive" />
           {/* <Image src={iPhone_Task} alt="screenshot of task page" layout="responsive" /> */}
         </div>

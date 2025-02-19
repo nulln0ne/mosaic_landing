@@ -1,20 +1,18 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
+import Image, { ImageProps } from "next/image";
 import Freelancer from "../../assets/freelancer.svg";
 import ClientImg from "../../assets/client.svg";
 import { motion, AnimatePresence } from "framer-motion";
 
-// Добавляем тип для пути
 type PathType = {
-  image: any;
+  image: ImageProps["src"];
   title: string;
   steps: string[];
   color: string;
 };
 
-// Явно указываем тип объекта PATHS
 const PATHS: Record<string, PathType> = {
   Freelancer: {
     image: Freelancer,
@@ -113,18 +111,16 @@ export default function Journey() {
           className="flex flex-col items-center"
         >
           <div className="flex gap-24 w-full items-center justify-between">
-            {/* Контейнер для изображения с фиксированными размерами */}
             <div className="w-[250px] h-[250px] flex-1 flex items-center justify-center">
               <Image
                 src={image}
                 alt={`${activeTab} illustration`}
-                width={250}   // Установим фиксированную ширину
+                width={250}
                 quality={100}
                 priority
               />
             </div>
 
-            {/* Контейнер для текста с фиксированной высотой */}
             <div className="flex-1 min-h-[250px] flex flex-col justify-between">
               <p className="mt-6 text-lg font-medium">{title}</p>
               <StepList steps={steps} />
