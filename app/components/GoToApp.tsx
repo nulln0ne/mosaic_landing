@@ -17,7 +17,7 @@ export default function GoToApp() {
       <h3 className="text-3xl text-green-700 font-bold">Want to make a deal securely <br />and without any limitations?</h3>
       <button
         onClick={() => sendClick()}
-        className="text-lg text-green-700 bg-white cursor-pointer border-2 border-green-700 py-2 px-4 rounded-full font-bold hover:bg-green-700 hover:text-white transition-all duration-300"
+        className="text-lg text-white bg-green-600 cursor-pointer border-2 border-green-600 py-2 px-4 rounded-full font-bold hover:bg-green-700 transition-all duration-300"
       >
         Open Web App
       </button>
