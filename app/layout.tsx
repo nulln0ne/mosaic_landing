@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-
 export const metadata: Metadata = {
   title: "Mosaic Freelance",
   description: "Mosaic Freelance is a platform in Telegram Mini Apps (TMA) build on TON blockchain for freelancers and customers to discover and collaborate on projects.",
