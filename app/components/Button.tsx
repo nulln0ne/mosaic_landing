@@ -5,18 +5,19 @@ import React from 'react';
 const buttonBaseClasses =
   'border-2 text-lg font-bold px-6 py-3 rounded-full relative overflow-hidden transition-all duration-300 ease-out border-primary text-primary group';
 
-const sendClick = () => {
-  fetch('https://api.mosaicsys.xyz/clicks', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ responseId: 'abc123' }),
-  })
-    .then(response => response.json())
-    .then(data => console.log('Success:', data))
-    .catch(error => console.error('Error:', error));
-};
-
-export default function ClientButton({ text, isTelegram }: { text: string; isTelegram?: boolean }) {
+  
+  export default function ClientButton({ text, isTelegram }: { text: string; isTelegram?: boolean }) {
+  const sendClick = () => {
+    fetch('https://api.mosaicsys.xyz/clicks', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ responseId: 'abc123' }),
+    })
+      .then(response => response.json())
+      .then(data => console.log('Success:', data))
+      .catch(error => console.error('Error:', error));
+    window.open(isTelegram ? 'https://t.me/Mosaic_xyz_Bot?start=' : 'https://app.mosaicsys.xyz/')
+  };
   return (
     <button onClick={sendClick} className={buttonBaseClasses}>
       <span className="absolute inset-0 bg-primary transform -translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-out"></span>
